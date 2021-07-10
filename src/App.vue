@@ -1,28 +1,62 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="asosiy">
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+h1{
+  font-size: 35px;
+}
+body{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.btt{
+  margin-top: -5px;
+  width: 100px;
+  height: 40px;
+}
+.el-header, .el-footer {
+  color: #333;
+  line-height: 60px;
+}
+.router{
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: -20px;
+}
+button{
+  width: 200px;
+  font-size: 40px;
+}
+.main{
+  margin-top: -30px;
+}
+.el-main {
+
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
 }
 </style>
