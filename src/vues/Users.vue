@@ -2,7 +2,7 @@
   <div class="q-pa-md">
     <el-button type="primary" @click="addData">Add</el-button>
     <el-table
-        :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()))"
+        :data="tableData"
         style="width: 100%">
       <el-table-column
           prop="id"
